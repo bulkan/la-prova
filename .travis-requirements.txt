@@ -1,8 +1,0 @@
-django
-nose
-coverage
-South
-django-extensions
-django-nose
-django-crispy-forms
-git+git://github.com/chrisglass/django_polymorphic.git
