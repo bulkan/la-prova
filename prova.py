@@ -10,14 +10,11 @@ import pyinotify
 import pynotify
 
 
-
-
-
 def main():
 
     if len(sys.argv)==1:
         print "Please pass a command to excute as a parameter"
-        print "For example autorun.py 'ruby foo.rb'"
+        print "For example prova.py 'ruby foo.rb'"
         sys.exit()
 
     if not pynotify.init ("summary-body"):
