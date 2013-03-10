@@ -2,21 +2,21 @@ from setuptools import setup
 
 __version__ = 'dev'
 
-description = '''django app to ask questions'''
+description = '''autorun stuff based on changes'''
 
 setup(
-    name='django-domande',
-    packages=[
-        'domande',
-        'domande.migrations'
-    ],
+    name='la-prova',
     version=__version__,
     description=description,
     author='Bulkan Evcimen',
     author_email='bulkan@gmail.com',
-    url='https://github.com/bulkan/django-domande',
+    url='https://github.com/bulkan/la-prova',
+    py_modules=['prova'],
     install_requires=[
-        'django_polymorphic'
+        'pyinotify'
+    ],
+    scripts=[
+        'prova.py'
     ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
